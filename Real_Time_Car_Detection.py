@@ -4,10 +4,10 @@ img_file = "images\More-cars-and-vans.png"
 video = cv2.VideoCapture("images\Dramatic Dashcam Footage Shows Plane Crash in Mukilteo Washington.mp4")
 
 #Importing classifier file
-classifier_file = "images\cars1.xml"
+car_classifier_file = "images\cars1.xml"
 
 #classify
-car_tracker = cv2.CascadeClassifier(classifier_file)
+car_tracker = cv2.CascadeClassifier(car_classifier_file)
 
 #Looping thought the video
 while True:
