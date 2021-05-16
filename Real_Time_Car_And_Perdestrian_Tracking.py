@@ -40,7 +40,7 @@ while True:
         cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 225, 255), 2)
 
     # Display image
-    cv2.imshow("Car App", frame)
+    cv2.imshow("Car and Perdestians tracking apps", frame)
     key = cv2.waitKey(1)
 
     #Q for qiut
