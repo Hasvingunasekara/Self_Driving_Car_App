@@ -33,6 +33,7 @@ while True:
 
     # drawing rectangles
     for (x, y, w, h) in car:
+        cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 2)
         cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 0, 255), 2)
 
     for (x, y, w, h) in pedestrians:
@@ -40,6 +41,10 @@ while True:
 
     # Display image
     cv2.imshow("Car App", frame)
-    cv2.waitKey(1)
+    key = cv2.waitKey(1)
 
-print("Done")
+    #Q for qiut
+    if key == 81 or key == 113:
+        break
+
+video.release()
